@@ -1,0 +1,10 @@
+com\example\backend\parser\CsvInputParserTest.class
+com\example\backend\parser\JsonInputParserTest.class
+com\example\backend\parser\XmlInputParserTest.class
+com\example\backend\controller\UserControllerTest.class
+com\example\backend\client\GemfireRestClientTest.class
+com\example\backend\service\DataProcessingServiceImplTest.class
+com\example\backend\controller\DataControllerTest.class
+com\example\backend\controller\UserControllerIntegrationTest.class
+com\example\backend\service\UserServiceImplTest.class
+com\example\backend\parser\ParserFactoryTest.class

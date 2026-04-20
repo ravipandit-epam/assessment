@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: backend-service
+
+server:
+  port: 8080
+
+gemfire:
+  base-url: http://localhost:7070
+  region-name: users
+  retry-attempts: 3
+  retry-delay-ms: 200
