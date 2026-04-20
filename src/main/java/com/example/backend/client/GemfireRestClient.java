@@ -4,6 +4,7 @@ import com.example.backend.exception.CacheClientException;
 import com.example.backend.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Primary;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
@@ -18,6 +19,7 @@ import java.util.List;
 
 @Component
 @Primary
+@ConditionalOnProperty(name = "gemfire.enabled", havingValue = "true")
 public class GemfireRestClient implements CacheClient {
 
     private static final Logger log = LoggerFactory.getLogger(GemfireRestClient.class);

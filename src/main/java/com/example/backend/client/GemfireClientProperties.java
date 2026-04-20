@@ -5,10 +5,19 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "gemfire")
 public class GemfireClientProperties {
 
+    private boolean enabled = false;
     private String baseUrl = "http://localhost:7070";
     private String regionName = "users";
     private int retryAttempts = 3;
     private long retryDelayMs = 200L;
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
 
     public String getBaseUrl() {
         return baseUrl;

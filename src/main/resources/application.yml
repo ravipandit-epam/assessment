@@ -6,6 +6,7 @@ server:
   port: 8080
 
 gemfire:
+  enabled: false
   base-url: http://localhost:7070
   region-name: users
   retry-attempts: 3
